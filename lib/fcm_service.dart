@@ -8,6 +8,7 @@ class FcmService {
     //foreground state
     FirebaseMessaging.onMessage.listen((RemoteMessage message) {
       //send local notification
+
       _handleNotification(message);
     });
 
